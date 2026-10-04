@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compile & Run",
+      "type": "shell",
+      "command": "fpc",
+      "args": [
+        "-gw",
+        "${file}"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Pascal",
+      "type": "shell",
+      "command": "${fileDirname}/${fileBasenameNoExtension}",
+      "dependsOn": "Compile & Run",
+      "problemMatcher": []
+    }
+  ]
+} 

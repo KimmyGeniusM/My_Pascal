@@ -1,0 +1,59 @@
+===================================
+PERHITUNGAN MANUAL BITWISE OPERATOR
+Nama    :   Evan Sebastian
+NIM     :   261401005
+Kom     :   A
+===================================
+
+Nilai yang ditentukan:
+A = 12, B = 10
+
+Biner (8-bit):
+A = 0000 1100
+B = 0000 1010
+
+1. AND (A and B)
+    0000 1100
+AND 0000 1010
+-------------
+    0000 1000  = 8
+
+2. OR (A or B)
+    0000 1100
+OR  0000 1010
+-------------
+    0000 1110  = 14
+
+3. XOR (A xor B)
+    0000 1100
+XOR 0000 1010
+-------------
+    0000 0110  = 6
+
+4. SHL (Shift Left)
+A shl 2: 0000 1100 -> 0011 0000 = 48  (12 x 2^2)
+B shl 2: 0000 1010 -> 0010 1000 = 40  (10 x 2^2)
+
+5. SHR (Shift Right)
+A shr 2: 0000 1100 -> 0000 0011 = 3   (12 / 2^2)
+B shr 2: 0000 1010 -> 0000 0010 = 2   (10 / 2^2, dibulatkan ke bawah)
+
+6. SHL dan SHR dengan Variabel
+A shl B (12 shl 10): 12 x 2^10 = 12288
+B shl A (10 shl 12): 10 x 2^12 = 40960
+A shr B (12 shr 10): 12 / 2^10 = 0
+B shr A (10 shr 12): 10 / 2^12 = 0
+
+Ringkasan:
+A and B = 8
+A or  B = 14
+A xor B = 6
+A shl 2 = 48
+B shl 2 = 40
+A shr 2 = 3
+B shr 2 = 2
+A shl B = 12288
+B shl A = 40960
+A shr B = 0
+B shr A = 0
+===================================
